@@ -697,15 +697,6 @@ The “better” tool depends on what risks matter most for a given project.
 
 ---
 
-## Final Note
-
-Many disagreements about Delphi and Free Pascal stem from mismatched assumptions rather than technical facts.
-Clarifying scope, terminology, and constraints resolves most of these debates before they begin.
-
-
-
----
-
 # Links
 - StackOverflow [Why would a Delphi programmer use Lazarus as the IDE instead of using Delphi's IDE?](https://stackoverflow.com/questions/2762611/why-would-a-delphi-programmer-use-lazarus-as-the-ide-instead-of-using-delphis-i)
 - Lazarus Wiki [Lazarus For Delphi Users](https://wiki.freepascal.org/Lazarus_For_Delphi_Users)
