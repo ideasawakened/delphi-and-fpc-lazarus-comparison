@@ -292,5 +292,168 @@ The right choice depends less on ideology and more on project constraints, team 
 
 ---
 
-*Section C focuses on concrete "Pick this if…" decision guides based on common real-world scenarios.*
+# Section C – “Pick This If…” Decision Guides
 
+> **Purpose**
+>
+> This section provides concrete, scenario-driven guidance to help developers decide between
+> **Delphi** and **Free Pascal / Lazarus**.  
+> Rather than listing features, it focuses on *project context*, *constraints*, and *long-term outcomes*.
+>
+
+---
+
+## C.1 Pick **Delphi** If…
+
+Choose Delphi when productivity, tooling depth, and long-term commercial support are primary concerns.
+
+### You are building a commercial desktop application
+- Windows-native UI is a priority
+- You rely on mature visual designers (VCL)
+- You expect a long-lived codebase with incremental updates
+- You depend on third-party commercial components
+
+**Why Delphi fits:**  
+Delphi’s IDE, debugger, and VCL ecosystem are optimized for this exact workload.
+
+---
+
+### You need rapid UI development with strong tooling
+- Designer-driven workflows matter
+- Refactoring safety is important
+- Debugging complex UI state is routine
+- Developer time is more expensive than licenses
+
+**Why Delphi fits:**  
+The tight integration between language, IDE, and frameworks minimizes friction.
+
+---
+
+### You are targeting mobile (iOS / Android) with shared code
+- A single codebase is desired
+- Native deployment is required
+- Business or internal applications are the focus
+
+**Why Delphi fits:**  
+FMX provides an integrated, supported mobile framework with a consistent workflow.
+
+---
+
+### You are building embedded *host* or HMI software
+- The system runs a full OS (Windows or embedded Linux)
+- The application is UI-heavy
+- Industrial or operational environments are involved
+
+**Why Delphi fits:**  
+Delphi excels at building stable, maintainable front-ends for embedded systems.
+
+---
+
+### You are an ISV with paying customers
+- Vendor support matters
+- Tooling stability is critical
+- Predictable release cycles are preferred
+
+**Why Delphi fits:**  
+Delphi is designed for commercial software development with long-term support expectations.
+
+---
+
+## C.2 Pick **Free Pascal / Lazarus** If…
+
+Choose FPC/Lazarus when openness, portability, and low-level control outweigh IDE-centric productivity.
+
+### You need a fully open toolchain
+- No proprietary compiler or IDE
+- Easy redistribution
+- Simple contributor onboarding
+
+**Why FPC/Lazarus fits:**  
+The entire toolchain is open source and freely available.
+
+---
+
+### You are building cross-platform desktop tools
+- Linux and BSD are first-class targets
+- Windows is important but not exclusive
+- UI consistency across platforms is acceptable
+
+**Why FPC/Lazarus fits:**  
+LCL provides broad desktop coverage with minimal platform lock-in.
+
+---
+
+### You are developing server-side or infrastructure software
+- Linux deployment is primary
+- CLI tools or background services are common
+- Small binaries and low overhead matter
+
+**Why FPC/Lazarus fits:**  
+FPC is well-suited for lightweight services and command-line tooling.
+
+---
+
+### You are working in embedded firmware or bare-metal environments
+- No general-purpose OS
+- Direct hardware access is required
+- Custom startup and memory layouts are needed
+
+**Why FPC/Lazarus fits:**  
+FPC supports minimal runtimes and bare-metal targets beyond Delphi’s scope.
+
+---
+
+### You want maximum platform flexibility
+- Niche or uncommon platforms are involved
+- Cross-compilation is routine
+- Toolchain customization is expected
+
+**Why FPC/Lazarus fits:**  
+FPC’s platform breadth and configurability are unmatched.
+
+---
+
+## C.3 Either Tool May Be Appropriate If…
+
+Some scenarios are genuinely overlapping.
+
+### Open-source projects
+- Small to medium contributor base
+- Platform scope is clearly defined
+- CI/CD requirements are manageable
+
+**How to decide:**  
+Choose Delphi for focused, platform-specific projects; choose FPC for broader community participation and hosted CI workflows.
+
+---
+
+### Cross-platform business backends
+- Shared logic across Windows and Linux
+- Database and REST-heavy workloads
+- Limited UI requirements
+
+**How to decide:**  
+Delphi favors rapid development with shared code; FPC favors portability and lower automation friction.
+
+---
+
+## C.4 A Practical Rule of Thumb
+
+- If your project’s *primary risk* is **developer productivity or UI complexity** → favor **Delphi**
+- If your project’s *primary risk* is **platform breadth, licensing, or automation** → favor **FPC/Lazarus**
+
+---
+
+## Closing Notes
+
+Delphi and Free Pascal / Lazarus are not direct substitutes; they represent different optimization strategies.
+
+Choosing correctly means aligning the tool with:
+- Project constraints
+- Team experience
+- Deployment targets
+- Long-term maintenance expectations
+
+---
+
+*Section D will cover CI/CD, automation, and workflow considerations in detail.*
