@@ -3,7 +3,7 @@
 Thank you for your interest in contributing.
 
 This repository aims to provide a **fact-based, vendor-neutral comparison**
-between Delphi and Free Pascal / Lazarus. Contributions are welcome, but must
+between Delphi and Free Pascal / Lazarus. Contributions are welcome, but please 
 adhere to the principles below.
 
 ---
@@ -11,7 +11,6 @@ adhere to the principles below.
 ## Scope and Philosophy
 
 - Only **generally available (GA)** features may be documented
-- No roadmaps, previews, NDAs, or speculative features
 - No advocacy or marketing language
 - Focus on real-world usage and constraints
 
