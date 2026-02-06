@@ -10,15 +10,16 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 
 ## Contents
 
-- [Section A – Quick Decision Matrix](#section-a--quick-decision-matrix)
-- [Section B – Feature Comparison by Developer Intent](#section-b--feature-comparison-by-developer-intent)
-- [Section C – “Pick This If…” Decision Guides](#section-c--pick-this-if-decision-guides)
-- [Section D – CI/CD, Automation, and Workflow Realities](#section-d--cicd-automation-and-workflow-realities)
+- [Section A - Quick Decision Matrix](#section-a---quick-decision-matrix)
+- [Section B - Feature Comparison by Developer Intent](#section-b---feature-comparison-by-developer-intent)
+- [Section C - Pick This If Decision Guides](#section-c---pick-this-if-decision-guides)
+- [Section D - CI/CD, Automation, and Workflow Realities](#section-d---cicd-automation-and-workflow-realities)
 - [Section E - Compliance and Supply Chain Considerations](#section-e---compliance-and-supply-chain-considerations)
-- [Appendix – Common Misconceptions](#appendix--common-misconceptions)
+- [Appendix - Common Misconceptions](#appendix---common-misconceptions)
 - [Links](#links)
 
 # Section A - Quick Decision Matrix
+
 
 ## Project & Platform Scenarios
 
@@ -53,7 +54,7 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 
 ---
 
-# Section B – Feature Comparison by Developer Intent
+# Section B - Feature Comparison by Developer Intent
 
 > This section compares Delphi and Free Pascal / Lazarus by *developer intent* rather than raw feature lists.
 > The focus is on how each toolchain behaves in real projects, where friction appears, and what trade-offs
@@ -308,7 +309,7 @@ The right choice depends less on ideology and more on project constraints, team 
 
 ---
 
-# Section C – “Pick This If…” Decision Guides
+# Section C - “Pick This If…” Decision Guides
 
 > **Purpose**
 >
@@ -472,7 +473,7 @@ Choosing correctly means aligning the tool with:
 
 ---
 
-# Section D – CI/CD, Automation, and Workflow Realities
+# Section D - CI/CD, Automation, and Workflow Realities
 
 > **Purpose**
 >
@@ -585,7 +586,7 @@ Free Pascal and Lazarus also depend on third-party libraries, but the core toolc
 
 --- 
 
-# Appendix – Common Misconceptions
+# Appendix - Common Misconceptions
 
 This appendix addresses frequent misconceptions that arise when comparing **Delphi** and **Free Pascal / Lazarus**.
 These points are included to clarify scope, terminology, and practical realities—not to advocate for one tool over the other.
