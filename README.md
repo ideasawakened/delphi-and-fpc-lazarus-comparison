@@ -7,6 +7,7 @@ A developer-oriented comparison of Delphi and Free Pascal/Lazarus, covering plat
 - [Section B – Feature Comparison by Developer Intent](#section-b--feature-comparison-by-developer-intent)
 - [Section C – “Pick This If…” Decision Guides](#section-c--pick-this-if-decision-guides)
 - [Section D – CI/CD, Automation, and Workflow Realities](#section-d--cicd-automation-and-workflow-realities)
+- [Appendix – Common Misconceptions](#appendix--common-misconceptions)
 
 # Section A - Quick Decision Matrix
 
@@ -570,4 +571,126 @@ but they strongly influence:
 
 Delphi aligns best with **commercial, controlled environments**.  
 Free Pascal / Lazarus aligns best with **open, automated, and highly distributed workflows**.
+
+
+--- 
+
+# Appendix – Common Misconceptions
+
+This appendix addresses frequent misconceptions that arise when comparing **Delphi** and **Free Pascal / Lazarus**.
+These points are included to clarify scope, terminology, and practical realities—not to advocate for one tool over the other.
+
+---
+
+## “Free Pascal / Lazarus is just a Delphi clone”
+
+**Reality:**  
+While Lazarus and the LCL were inspired by Delphi and the VCL, Free Pascal is a distinct compiler with its own goals, architecture, and strengths.
+
+**Key distinction:**  
+- Delphi emphasizes *integrated productivity*
+- FPC emphasizes *openness, portability, and flexibility*
+
+Similarity does not imply equivalence or replacement.
+
+---
+
+## “Delphi can’t do open-source”
+
+**Reality:**  
+Delphi can and does support open-source projects.
+
+**The constraint:**  
+Because Delphi is a licensed tool, open-source workflows—especially CI/CD using hosted runners—require additional setup (typically self-hosted runners).
+
+**Implication:**  
+Delphi is best suited to focused or controlled open-source projects, while FPC/Lazarus fits large, distributed contributor models more naturally.
+
+---
+
+## “Free Pascal can fully replace Delphi for VCL applications”
+
+**Reality:**  
+Free Pascal and Lazarus do **not** implement the VCL.
+
+**Important distinction:**  
+- VCL applications can be **ported** to Lazarus/LCL
+- They cannot be **maintained in-place** as VCL applications under FPC
+
+This is a framework boundary, not a language limitation.
+
+---
+
+## “Embedded support means the same thing in both ecosystems”
+
+**Reality:**  
+The term *embedded* is used very loosely and often causes confusion.
+
+**Clarification:**
+- **Embedded firmware / bare-metal**:  
+  Microcontrollers, no OS, custom startup code  
+  → Supported by FPC, not targeted by Delphi
+- **Embedded system host / HMI software**:  
+  Full OS (Windows or embedded Linux), UI-heavy  
+  → Strong use case for Delphi, also viable with FPC
+
+Using the same word for both hides critical differences.
+
+---
+
+## “Delphi is Windows-only”
+
+**Reality:**  
+Delphi supports Windows, macOS, Linux (server-side), iOS, and Android.
+
+**Nuance:**  
+Windows remains Delphi’s strongest and most mature platform, but it is not the only one.
+
+---
+
+## “Free Pascal mobile support is equivalent to Delphi FMX”
+
+**Reality:**  
+Free Pascal can target mobile platforms via cross-compilation, but it does not provide a single, officially integrated mobile UI framework comparable to FMX.
+
+**Implication:**  
+- Delphi emphasizes a productized mobile workflow
+- FPC emphasizes flexibility and custom solutions
+
+Both approaches are valid; they serve different needs.
+
+---
+
+## “Choosing Delphi or FPC is an ideological decision”
+
+**Reality:**  
+Most real-world choices are pragmatic, not ideological.
+
+Teams typically choose based on:
+- Tooling productivity
+- Licensing constraints
+- Platform targets
+- CI/CD requirements
+- Long-term maintenance expectations
+
+This comparison is structured around those constraints, not personal preference.
+
+---
+
+## “One tool is objectively better than the other”
+
+**Reality:**  
+Delphi and Free Pascal / Lazarus optimize for different trade-offs.
+
+- Delphi prioritizes **developer productivity and integration**
+- FPC prioritizes **openness and platform breadth**
+
+The “better” tool depends on what risks matter most for a given project.
+
+---
+
+## Final Note
+
+Many disagreements about Delphi and Free Pascal stem from mismatched assumptions rather than technical facts.
+Clarifying scope, terminology, and constraints resolves most of these debates before they begin.
 
