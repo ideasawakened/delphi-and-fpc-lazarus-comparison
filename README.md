@@ -33,15 +33,15 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 | Embedded system host / HMI software    | **Strongly recommended** | **Recommended**                | Targets embedded or industrial systems running a full OS (Windows or Linux). Delphi excels at rapid UI development and device integration; FPC/Lazarus is well-suited for cross-platform or open deployments                                 |
 | Embedded / bare-metal targets          | **Not supported**        | **Strongly recommended**       | Targets systems without a general-purpose OS (microcontrollers, SoCs with no OS or minimal RTOS). Requires custom startup code, memory layout control, and direct hardware access. FPC supports minimal runtimes and bare-metal environments |
 | Open-source projects                  | **Recommended**          | **Strongly recommended**       | FPC has no licensing cost and broad platform freedom                                                                                                                                                                                         |
-| Commercial ISV products                | **Strongly recommended** | **Viable**                     | Delphi’s tooling, support, and ecosystem favor commercial development                                                                                                                                                                        |
+| Commercial ISV products                | **Strongly recommended** | **Viable**                     | Delphi's tooling, support, and ecosystem favor commercial development                                                                                                                                                                        |
 
 ## Legend
 
-- **Strongly recommended** – Excellent fit; commonly chosen with low friction
-- **Recommended** – Solid fit; used successfully in production
-- **Supported (advanced setup)** – Technically supported but requires significant manual setup
-- **Viable** – Possible, but notable trade-offs exist
-- **Not supported** – No practical or supported solution
+- **Strongly recommended**   Excellent fit; commonly chosen with low friction
+- **Recommended**   Solid fit; used successfully in production
+- **Supported (advanced setup)**   Technically supported but requires significant manual setup
+- **Viable**   Possible, but notable trade-offs exist
+- **Not supported**   No practical or supported solution
 
 ---
 ## Notes
@@ -309,7 +309,7 @@ The right choice depends less on ideology and more on project constraints, team 
 
 ---
 
-# Section C - “Pick This If…” Decision Guides
+# Section C - "Pick This If..." Decision Guides
 
 > **Purpose**
 >
@@ -320,7 +320,7 @@ The right choice depends less on ideology and more on project constraints, team 
 
 ---
 
-## C.1 Pick **Delphi** If…
+## C.1 Pick **Delphi** If...
 
 Choose Delphi when productivity, tooling depth, and long-term commercial support are primary concerns.
 
@@ -331,7 +331,7 @@ Choose Delphi when productivity, tooling depth, and long-term commercial support
 - You depend on third-party commercial components
 
 **Why Delphi fits:**  
-Delphi’s IDE, debugger, and VCL ecosystem are optimized for this exact workload.
+Delphi's IDE, debugger, and VCL ecosystem are optimized for this exact workload.
 
 ---
 
@@ -376,7 +376,7 @@ Delphi is designed for commercial software development with long-term support ex
 
 ---
 
-## C.2 Pick **Free Pascal / Lazarus** If…
+## C.2 Pick **Free Pascal / Lazarus** If...
 
 Choose FPC/Lazarus when openness, portability, and low-level control outweigh IDE-centric productivity.
 
@@ -416,7 +416,7 @@ FPC is well-suited for lightweight services and command-line tooling.
 - Custom startup and memory layouts are needed
 
 **Why FPC/Lazarus fits:**  
-FPC supports minimal runtimes and bare-metal targets beyond Delphi’s scope.
+FPC supports minimal runtimes and bare-metal targets beyond Delphi's scope.
 
 ---
 
@@ -426,11 +426,11 @@ FPC supports minimal runtimes and bare-metal targets beyond Delphi’s scope.
 - Toolchain customization is expected
 
 **Why FPC/Lazarus fits:**  
-FPC’s platform breadth and configurability are unmatched.
+FPC's platform breadth and configurability are unmatched.
 
 ---
 
-## C.3 Either Tool May Be Appropriate If…
+## C.3 Either Tool May Be Appropriate If...
 
 Some scenarios are genuinely overlapping.
 
@@ -456,8 +456,8 @@ Delphi favors rapid development with shared code; FPC favors portability and low
 
 ## C.4 A Practical Rule of Thumb
 
-- If your project’s *primary risk* is **developer productivity or UI complexity** → favor **Delphi**
-- If your project’s *primary risk* is **platform breadth, licensing, or automation** → favor **FPC/Lazarus**
+- If your project's *primary risk* is **developer productivity or UI complexity** -> favor **Delphi**
+- If your project's *primary risk* is **platform breadth, licensing, or automation** -> favor **FPC/Lazarus**
 
 ---
 
@@ -589,11 +589,11 @@ Free Pascal and Lazarus also depend on third-party libraries, but the core toolc
 # Appendix - Common Misconceptions
 
 This appendix addresses frequent misconceptions that arise when comparing **Delphi** and **Free Pascal / Lazarus**.
-These points are included to clarify scope, terminology, and practical realities—not to advocate for one tool over the other.
+These points are included to clarify scope, terminology, and practical realities not to advocate for one tool over the other.
 
 ---
 
-## “Free Pascal / Lazarus is just a Delphi clone”
+## "Free Pascal / Lazarus is just a Delphi clone"
 
 **Reality:**  
 While Lazarus and the LCL were inspired by Delphi and the VCL, Free Pascal is a distinct compiler with its own goals, architecture, and strengths.
@@ -606,20 +606,20 @@ Similarity does not imply equivalence or replacement.
 
 ---
 
-## “Delphi can’t do open-source”
+## "Delphi can't do open-source"
 
 **Reality:**  
 Delphi can and does support open-source projects.
 
 **The constraint:**  
-Because Delphi is a licensed tool, open-source workflows—especially CI/CD using hosted runners—require additional setup (typically self-hosted runners).
+Because Delphi is a licensed tool, open-source workflows especially CI/CD using hosted runners require additional setup (typically self-hosted runners).
 
 **Implication:**  
 Delphi is best suited to focused or controlled open-source projects, while FPC/Lazarus fits large, distributed contributor models more naturally.
 
 ---
 
-## “Free Pascal can fully replace Delphi for VCL applications”
+## "Free Pascal can fully replace Delphi for VCL applications"
 
 **Reality:**  
 Free Pascal and Lazarus do **not** implement the VCL.
@@ -632,7 +632,7 @@ This is a framework boundary, not a language limitation.
 
 ---
 
-## “Embedded support means the same thing in both ecosystems”
+## "Embedded support means the same thing in both ecosystems"
 
 **Reality:**  
 The term *embedded* is used very loosely and often causes confusion.
@@ -640,26 +640,26 @@ The term *embedded* is used very loosely and often causes confusion.
 **Clarification:**
 - **Embedded firmware / bare-metal**:  
   Microcontrollers, no OS, custom startup code  
-  → Supported by FPC, not targeted by Delphi
+  -> Supported by FPC, not targeted by Delphi
 - **Embedded system host / HMI software**:  
   Full OS (Windows or embedded Linux), UI-heavy  
-  → Strong use case for Delphi, also viable with FPC
+  -> Strong use case for Delphi, also viable with FPC
 
 Using the same word for both hides critical differences.
 
 ---
 
-## “Delphi is Windows-only”
+## "Delphi is Windows-only"
 
 **Reality:**  
 Delphi supports Windows, macOS, Linux*, iOS, and Android.
 
 **Nuance:**  
-Windows remains Delphi’s strongest and most mature platform, but it is not the only one.
+Windows remains Delphi's strongest and most mature platform, but it is not the only one.
 
 ---
 
-## “Free Pascal mobile support is equivalent to Delphi FMX”
+## "Free Pascal mobile support is equivalent to Delphi FMX"
 
 **Reality:**  
 Free Pascal can target mobile platforms via cross-compilation, but it does not provide a single, officially integrated mobile UI framework comparable to FMX.
@@ -672,7 +672,7 @@ Both approaches are valid; they serve different needs.
 
 ---
 
-## “Choosing Delphi or FPC is an ideological decision”
+## "Choosing Delphi or FPC is an ideological decision"
 
 **Reality:**  
 Most real-world choices are pragmatic, not ideological.
@@ -688,7 +688,7 @@ This comparison is structured around those constraints, not personal preference.
 
 ---
 
-## “One tool is objectively better than the other”
+## "One tool is objectively better than the other"
 
 **Reality:**  
 Delphi and Free Pascal / Lazarus optimize for different trade-offs.
@@ -696,7 +696,7 @@ Delphi and Free Pascal / Lazarus optimize for different trade-offs.
 - Delphi prioritizes **developer productivity and integration**
 - FPC prioritizes **openness and platform breadth**
 
-The “better” tool depends on what risks matter most for a given project.
+The "better" tool depends on what risks matter most for a given project.
 
 ---
 
