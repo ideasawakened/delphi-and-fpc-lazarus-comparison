@@ -641,7 +641,7 @@ Using the same word for both hides critical differences.
 ## “Delphi is Windows-only”
 
 **Reality:**  
-Delphi supports Windows, macOS, Linux (server-side), iOS, and Android.
+Delphi supports Windows, macOS, Linux*, iOS, and Android.
 
 **Nuance:**  
 Windows remains Delphi’s strongest and most mature platform, but it is not the only one.
