@@ -14,7 +14,7 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 - [Section B – Feature Comparison by Developer Intent](#section-b--feature-comparison-by-developer-intent)
 - [Section C – “Pick This If…” Decision Guides](#section-c--pick-this-if-decision-guides)
 - [Section D – CI/CD, Automation, and Workflow Realities](#section-d--cicd-automation-and-workflow-realities)
-- [Section E - Compliance and Supply-Chain Considerations](#section-e--compliance-and-supply--chain-considerations)
+- [Section E - Compliance and Supply Chain Considerations](#section-e--compliance-and-supply-chain-considerations)
 - [Appendix – Common Misconceptions](#appendix--common-misconceptions)
 - [Links](#links)
 
@@ -567,7 +567,7 @@ Free Pascal / Lazarus aligns best with **open, automated, and highly distributed
 
 ---
 
-# Section E - Compliance and Supply-Chain Considerations
+# Section E - Compliance and Supply Chain Considerations
 
 ### Delphi
 
