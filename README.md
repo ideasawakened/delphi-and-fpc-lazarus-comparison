@@ -1,10 +1,18 @@
 # Delphi and Free Pascal/Lazarus Comparison
 A developer-oriented comparison of Delphi and Free Pascal/Lazarus, covering platforms, tooling, workflows, and project fit.
 
+## Contents
 
-## Section A - Quick Decision Matrix
+- [Section A – Quick Decision Matrix](#section-a--quick-decision-matrix)
+- [Section B – Feature Comparison by Developer Intent](#section-b--feature-comparison-by-developer-intent)
+- [Section C – “Pick This If…” Decision Guides](#section-c--pick-this-if-decision-guides)
+- [Section D – CI/CD, Automation, and Workflow Realities](#section-d--cicd-automation-and-workflow-realities)
+- [Changelog](#changelog)
+- [Contributing](#contributing)
 
-### Project & Platform Scenarios
+# Section A - Quick Decision Matrix
+
+## Project & Platform Scenarios
 
 | Scenario                               | Delphi                   | FPC / Lazarus                  | Notes                                                                                                                                                                                                                                        |
 | -------------------------------------- | ------------------------ | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,7 +26,7 @@ A developer-oriented comparison of Delphi and Free Pascal/Lazarus, covering plat
 | Open-source  projects                  | **Recommended**          | **Strongly recommended**       | FPC has no licensing cost and broad platform freedom                                                                                                                                                                                         |
 | Commercial ISV products                | **Strongly recommended** | **Viable**                     | Delphi’s tooling, support, and ecosystem favor commercial development                                                                                                                                                                        |
 
-### Legend
+## Legend
 
 - **Strongly recommended** – Excellent fit; commonly chosen with low friction
 - **Recommended** – Solid fit; used successfully in production
@@ -27,7 +35,7 @@ A developer-oriented comparison of Delphi and Free Pascal/Lazarus, covering plat
 - **Not supported** – No practical or supported solution
 
 ---
-### Notes
+## Notes
 
 - **Delphi** prioritizes productivity, tooling integration, and commercial application development on full operating systems.
 - **FPC / Lazarus** prioritizes platform breadth, openness, and low-level control, often at the cost of higher setup effort.
