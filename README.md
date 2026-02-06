@@ -7,8 +7,6 @@ A developer-oriented comparison of Delphi and Free Pascal/Lazarus, covering plat
 - [Section B – Feature Comparison by Developer Intent](#section-b--feature-comparison-by-developer-intent)
 - [Section C – “Pick This If…” Decision Guides](#section-c--pick-this-if-decision-guides)
 - [Section D – CI/CD, Automation, and Workflow Realities](#section-d--cicd-automation-and-workflow-realities)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
 
 # Section A - Quick Decision Matrix
 
@@ -464,4 +462,112 @@ Choosing correctly means aligning the tool with:
 
 ---
 
-*Section D will cover CI/CD, automation, and workflow considerations in detail.*
+# Section D – CI/CD, Automation, and Workflow Realities
+
+> **Purpose**
+>
+> This section examines how Delphi and Free Pascal / Lazarus fit into modern development workflows,
+> with particular attention to CI/CD automation, licensing constraints, and team scalability.
+>
+> These considerations often become decisive *after* a project has started, so they are called out
+> explicitly here.
+
+---
+
+## D.1 Hosted CI/CD Environments
+
+### Free Pascal / Lazarus
+- Fully supported on hosted CI systems (GitHub Actions, GitLab CI, Azure Pipelines)
+- Can be installed directly via package managers or prebuilt binaries
+- No licensing or activation requirements
+- Ideal for public and open-source repositories
+
+**Impact:**  
+Low friction, easy onboarding, and highly reproducible builds.
+
+---
+
+### Delphi
+- Cannot be installed on hosted CI runners due to licensing restrictions
+- Requires **self-hosted runners**
+- License activation and management must be handled carefully
+- Build environments must be maintained by the project or organization
+
+**Impact:**  
+Higher setup cost and operational overhead, especially for open-source projects.
+
+---
+
+## D.2 Self-Hosted CI Runners
+
+### Delphi
+Self-hosted CI is a common and supported pattern for Delphi-based projects.
+
+Typical characteristics:
+- Dedicated Windows build machines
+- IDE or compiler installed under license
+- Runners integrated with GitHub Actions, GitLab CI, or other systems
+
+Strengths:
+- Full control over toolchain
+- Stable and predictable builds
+- Suitable for commercial ISVs
+
+Trade-offs:
+- Infrastructure cost
+- Ongoing maintenance
+- Reduced accessibility for external contributors
+
+---
+
+### Free Pascal / Lazarus
+- Self-hosted runners are optional, not required
+- Often used only for specialized targets
+- Simpler maintenance due to open toolchain
+
+---
+
+## D.3 Contributor Onboarding
+
+### Free Pascal / Lazarus
+- Contributors can install the full toolchain freely
+- Works well across Windows, Linux, and macOS
+- Lower barrier to entry for casual contributors
+
+---
+
+### Delphi
+- Contributors must have access to a licensed environment
+- More common in controlled teams or ISV settings
+- Less suited to large, loosely organized contributor communities
+
+---
+
+## D.4 Build Reproducibility and Longevity
+
+### Delphi
+- Reproducible builds achievable with discipline
+- Long-term support releases are valuable for stability
+- Toolchain updates are tied to vendor release cycles
+
+---
+
+### Free Pascal / Lazarus
+- Strong reproducibility across environments
+- Toolchain versions easily pinned
+- Long-term archival builds are simpler
+
+---
+
+## Summary
+
+CI/CD and automation considerations do not usually determine the *initial* tool choice,
+but they strongly influence:
+
+- Long-term maintainability
+- Community growth
+- Operational cost
+
+Delphi aligns best with **commercial, controlled environments**.  
+Free Pascal / Lazarus aligns best with **open, automated, and highly distributed workflows**.
+
