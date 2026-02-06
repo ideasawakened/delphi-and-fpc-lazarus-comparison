@@ -703,4 +703,5 @@ The “better” tool depends on what risks matter most for a given project.
 - Delphi-PRAXiS forum message [Delphi or Lazarus/Free Pascal](https://en.delphipraxis.net/topic/7418-delphi-or-lazarusfree-pascal/)
 - YouTube/The Silver Pascal Coder [My first look at Lazarus and Free Pascal](https://youtu.be/jsLHkWExHsI)
 - Udemy Blog [Best Pascal IDE: Delphi vs. Lazarus](https://blog.udemy.com/pascal-ide/)
-
+- `2026.02.06` Lazarus Forum [Debian removes FPC/Lazarus](https://forum.lazarus.freepascal.org/index.php?topic=73405.0)
+  - FPC/Lazarus both depend on gtk2 and Debian is dropping support for gtk2
