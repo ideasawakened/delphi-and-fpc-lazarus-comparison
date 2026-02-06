@@ -14,6 +14,7 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 - [Section B – Feature Comparison by Developer Intent](#section-b--feature-comparison-by-developer-intent)
 - [Section C – “Pick This If…” Decision Guides](#section-c--pick-this-if-decision-guides)
 - [Section D – CI/CD, Automation, and Workflow Realities](#section-d--cicd-automation-and-workflow-realities)
+- [Section E - Compliance and Supply-Chain Considerations](#section-e--compliance-and-supply--chain-considerations)
 - [Appendix – Common Misconceptions](#appendix--common-misconceptions)
 - [Links](#links)
 
@@ -30,7 +31,7 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 | Command-line tools (CLI)               | **Recommended**          | **Strongly recommended**       | FPC commonly used for small, fast, low-dependency binaries                                                                                                                                                                                   |
 | Embedded system host / HMI software    | **Strongly recommended** | **Recommended**                | Targets embedded or industrial systems running a full OS (Windows or Linux). Delphi excels at rapid UI development and device integration; FPC/Lazarus is well-suited for cross-platform or open deployments                                 |
 | Embedded / bare-metal targets          | **Not supported**        | **Strongly recommended**       | Targets systems without a general-purpose OS (microcontrollers, SoCs with no OS or minimal RTOS). Requires custom startup code, memory layout control, and direct hardware access. FPC supports minimal runtimes and bare-metal environments |
-| Open-source  projects                  | **Recommended**          | **Strongly recommended**       | FPC has no licensing cost and broad platform freedom                                                                                                                                                                                         |
+| Open-source projects                  | **Recommended**          | **Strongly recommended**       | FPC has no licensing cost and broad platform freedom                                                                                                                                                                                         |
 | Commercial ISV products                | **Strongly recommended** | **Viable**                     | Delphi’s tooling, support, and ecosystem favor commercial development                                                                                                                                                                        |
 
 ## Legend
@@ -128,8 +129,8 @@ Strengths:
 Constraints:
 - Commerical licensing required
 - Heavier system requirements
-- IDE quality setbacks
-- Non Win32 debugging often struggles
+- IDE quality can vary across releases
+- Debugging quality outside Win32 can be less consistent
 
 ---
 
@@ -550,23 +551,7 @@ Trade-offs:
 - More common in controlled teams or ISV settings
 - Less suited to large, loosely organized contributor communities
 
----
-
-## D.4 Build Reproducibility and Longevity
-
-### Delphi
-- Reproducible builds achievable with discipline
-- Long-term support releases are valuable for stability
-- Toolchain updates are tied to vendor release cycles
-
----
-
-### Free Pascal / Lazarus
-- Strong reproducibility across environments
-- Toolchain versions easily pinned
-- Long-term archival builds are simpler
-
----
+--- 
 
 ## Summary
 
@@ -580,6 +565,23 @@ but they strongly influence:
 Delphi aligns best with **commercial, controlled environments**.  
 Free Pascal / Lazarus aligns best with **open, automated, and highly distributed workflows**.
 
+---
+
+# Section E - Compliance and Supply-Chain Considerations
+
+### Delphi
+
+*Centralized toolchain ownership with external dependencies*
+
+Delphi, like most modern development platforms, relies on third-party libraries and components. However, the compiler, RTL, IDE, and official platform integrations are owned and distributed by a single commercial vendor. This provides a clearly defined escalation and accountability path for toolchain-level licensing, security updates, and compliance inquiries, which can simplify audit and SBOM processes in regulated environments.
+
+---
+
+### Free Pascal / Lazarus
+
+*Decentralized toolchain governance and distribution*
+
+Free Pascal and Lazarus also depend on third-party libraries, but the core toolchain and its distribution are governed across multiple independent projects and, on Linux, further mediated by downstream distributions. Ongoing packaging or compliance discussions in some distributions (see Debian conversation in Links section) highlight potential availability or policy risks for organizations that rely on distro-managed toolchains, where resolution timelines and responsibility boundaries may be less predictable.
 
 --- 
 
