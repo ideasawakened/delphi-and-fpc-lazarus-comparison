@@ -15,6 +15,7 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 - [Section C – “Pick This If…” Decision Guides](#section-c--pick-this-if-decision-guides)
 - [Section D – CI/CD, Automation, and Workflow Realities](#section-d--cicd-automation-and-workflow-realities)
 - [Appendix – Common Misconceptions](#appendix--common-misconceptions)
+- [Links](#links)
 
 # Section A - Quick Decision Matrix
 
@@ -701,3 +702,11 @@ The “better” tool depends on what risks matter most for a given project.
 Many disagreements about Delphi and Free Pascal stem from mismatched assumptions rather than technical facts.
 Clarifying scope, terminology, and constraints resolves most of these debates before they begin.
 
+
+
+---
+
+# Links
+StackOverflow [Why would a Delphi programmer use Lazarus as the IDE instead of using Delphi's IDE?](https://stackoverflow.com/questions/2762611/why-would-a-delphi-programmer-use-lazarus-as-the-ide-instead-of-using-delphis-i)
+Lazarus Wiki [Lazarus For Delphi Users](https://wiki.freepascal.org/Lazarus_For_Delphi_Users)
+Udemy Blog [Best Pascal IDE: Delphi vs. Lazarus](https://blog.udemy.com/pascal-ide/)
