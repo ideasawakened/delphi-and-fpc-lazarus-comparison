@@ -707,6 +707,6 @@ Clarifying scope, terminology, and constraints resolves most of these debates be
 ---
 
 # Links
-StackOverflow [Why would a Delphi programmer use Lazarus as the IDE instead of using Delphi's IDE?](https://stackoverflow.com/questions/2762611/why-would-a-delphi-programmer-use-lazarus-as-the-ide-instead-of-using-delphis-i)
-Lazarus Wiki [Lazarus For Delphi Users](https://wiki.freepascal.org/Lazarus_For_Delphi_Users)
-Udemy Blog [Best Pascal IDE: Delphi vs. Lazarus](https://blog.udemy.com/pascal-ide/)
+- StackOverflow [Why would a Delphi programmer use Lazarus as the IDE instead of using Delphi's IDE?](https://stackoverflow.com/questions/2762611/why-would-a-delphi-programmer-use-lazarus-as-the-ide-instead-of-using-delphis-i)
+- Lazarus Wiki [Lazarus For Delphi Users](https://wiki.freepascal.org/Lazarus_For_Delphi_Users)
+- Udemy Blog [Best Pascal IDE: Delphi vs. Lazarus](https://blog.udemy.com/pascal-ide/)
