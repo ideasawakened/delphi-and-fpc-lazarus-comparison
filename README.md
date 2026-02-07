@@ -8,6 +8,10 @@ Ratings and recommendations reflect practical fit and workflow impact, not theor
 
 Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted here are intended to clarify trade-offs, not to rank one ecosystem as universally better than the other.
 
+## Target Audience
+
+This article is intended for developers and technical leads evaluating Delphi and Free Pascal/Lazarus for production use. It focuses on decision-making trade-offs rather than introductory material or feature tutorials.
+
 ## Contents
 
 - [Section A - Quick Decision Matrix](#section-a---quick-decision-matrix)
