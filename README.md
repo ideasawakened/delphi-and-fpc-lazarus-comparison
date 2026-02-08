@@ -17,6 +17,7 @@ It is written for:
 - FPC/Lazarus developers who want a fair comparison that acknowledges strengths and workflow trade-offs without ideology
 - Architects and engineering leads making platform decisions involving deployment targets, CI/CD workflows, licensing, compliance, and long-term maintenance
 
+This is a living reference. Corrections, links to primary documentation, and real-world experience reports are encouraged to improve accuracy over time.
 
 ## Contents
 
