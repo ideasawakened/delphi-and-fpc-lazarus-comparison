@@ -10,7 +10,13 @@ Both Delphi and Free Pascal / Lazarus are capable tools. Differences highlighted
 
 ## Target Audience
 
-This article is intended for developers and technical leads evaluating Delphi and Free Pascal/Lazarus for production use. It focuses on decision-making trade-offs rather than introductory material or feature tutorials.
+This article is intended for developers, architects, and technical leads evaluating Delphi and Free Pascal/Lazarus for production use. It focuses on decision-making trade-offs rather than introductory material or feature tutorials.
+
+It is written for:
+- Delphi developers who also use (or are considering) FPC/Lazarus and want a practical reference for when each tool is the better fit
+- FPC/Lazarus developers who want a fair comparison that acknowledges strengths and workflow trade-offs without ideology
+- Architects and engineering leads making platform decisions involving deployment targets, CI/CD workflows, licensing, compliance, and long-term maintenance
+
 
 ## Contents
 
